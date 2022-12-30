@@ -22,8 +22,8 @@ class Home extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="title">Photo Album</h1>
-        <div className="sdn_container">
+        <h1 className="title header">Photo Album</h1>
+        <div className="album_container">
           <User
             // Pass the func onUserSelected to User Component, this will update the state of selectedUserId here in Home.js
             onUserSelected={this.onUserSelected}

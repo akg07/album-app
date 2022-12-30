@@ -31,7 +31,7 @@ class User extends Component {
     return (
       <div className="main_container">
         <div className="user_container">
-          <h1 className="title">Users</h1>
+          <h1 className="title users-header">Users</h1>
           {!userData ? (
             <p>...Loading</p>
           ) : (
@@ -48,7 +48,7 @@ class User extends Component {
                       // style wants an object. backgroundcolor is a convention for react which wouldn't accept "backgroud-color"
                       backgroundColor:
                         this.props.selectedUserId === userItem.id // check if the selectedUserId is the same and the one we are looping in
-                          ? "lightgreen"
+                          ? "#FF8235"
                           : "white"
                     }}
                   >
